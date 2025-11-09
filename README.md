@@ -22,8 +22,7 @@ For questions or support, please open an issue on [GitHub Issues](https://github
 
 **Built by [Naman Singh](https://github.com/NamanSingh24)** questions or support, please:
 - Open an issue on [GitHub Issues](https://github.com/NamanSingh24/order-execution-engine/issues)
-- Contact: namansingh.dev@gmail.com
-- Twitter: [@NamanSingh24](https://twitter.com/NamanSingh24)
+
 
 ---
 
