@@ -23,8 +23,16 @@
     "trading",
     "blockchain"
   ],
-  "author": "",
+  "author": "Naman Singh (https://github.com/NamanSingh24)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NamanSingh24/order-execution-engine.git"
+  },
+  "homepage": "https://github.com/NamanSingh24/order-execution-engine#readme",
+  "bugs": {
+    "url": "https://github.com/NamanSingh24/order-execution-engine/issues"
+  },
   "dependencies": {
     "@fastify/cors": "^11.1.0",
     "@fastify/websocket": "^11.0.1",

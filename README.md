@@ -5,11 +5,32 @@ A high-performance, real-time order execution engine built with TypeScript that 
 ![Node.js](https://img.shields.io/badge/Node.js-20.x-green)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![CI](https://github.com/NamanSingh24/order-execution-engine/workflows/CI/badge.svg)
+![CI](https://github.com/Nam## 🎥 Demo Video
+
+📹 **Watch the Demo:** https://youtube.com/@namansingh24
+
+Video Contents:gh24/order-execution-engine/workflows/CI/badge.svg)
 
 ## 📋 Overview
 
-This project implements a sophisticated order execution system that:
+This project implements a sophisticated order exe## 📞For detailed deployment instructions, see [DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
+---
+
+## 📞 Support
+
+For questions or support, please open an issue on [GitHub Issues](https://github.com/NamanSingh24/order-execution-engine/issues).
+
+---
+
+**Built with ❤️ by [Naman Singh](https://github.com/NamanSingh24)** questions or support, please:
+- Open an issue on [GitHub Issues](https://github.com/NamanSingh24/order-execution-engine/issues)
+- Contact: namansingh.dev@gmail.com
+- Twitter: [@NamanSingh24](https://twitter.com/NamanSingh24)
+
+---
+
+**Built with ❤️ by Naman Singh**stem that:
 - Routes orders through multiple DEX protocols (Raydium and Meteora)
 - Provides real-time order status updates via WebSocket connections
 - Uses a distributed job queue (BullMQ) for reliable order processing
@@ -503,7 +524,7 @@ tests/
 
 ### Production Deployment URL
 
-🚀 **Live Application:** [Coming Soon]
+🚀 **Live Application:** https://order-execution-engine.onrender.com
 
 ### Deployment Options
 
@@ -635,7 +656,7 @@ Contributions are welcome! Please follow these steps:
 
 1. **Fork the repository**
    ```bash
-   git clone https://github.com/YourUsername/order-execution-engine.git
+   git clone https://github.com/NamanSingh24/order-execution-engine.git
    ```
 
 2. **Create a feature branch**
@@ -703,7 +724,48 @@ SOFTWARE.
 
 ---
 
-## 📞 Support
+## � Deployment
+
+This application can be deployed to multiple cloud platforms:
+
+### Quick Deploy Options
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
+
+### Platform-Specific Guides
+
+- **[Render.com](docs/DEPLOYMENT.md#deploy-to-render)** - One-click deployment with `render.yaml`
+- **[Railway](docs/DEPLOYMENT.md#deploy-to-railway)** - Deploy via CLI or dashboard with `railway.json`
+
+### Quick Start Commands
+
+**Render:**
+```bash
+# Push render.yaml and deploy via Render dashboard
+git push origin main
+# Then connect repository at https://dashboard.render.com
+```
+
+**Railway:**
+```bash
+# Install Railway CLI
+npm install -g @railway/cli
+
+# Deploy
+railway login
+railway init
+railway add --database postgres
+railway add --database redis
+railway up
+railway domain
+```
+
+For detailed deployment instructions, see [DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
+---
+
+## �📞 Support
 
 For questions or support, please:
 - Open an issue on [GitHub Issues](https://github.com/NamanSingh24/order-execution-engine/issues)

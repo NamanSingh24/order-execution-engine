@@ -19,7 +19,7 @@ This project adheres to a Code of Conduct that all contributors are expected to 
 - Focus on what's best for the community
 - Show empathy towards other community members
 
-Please report unacceptable behavior to [project maintainer email].
+Please report unacceptable behavior by opening an issue on [GitHub Issues](https://github.com/NamanSingh24/order-execution-engine/issues).
 
 ---
 
@@ -685,7 +685,6 @@ Any other information, mockups, or examples.
 
 - **Questions?** Open a [GitHub Discussion](https://github.com/NamanSingh24/order-execution-engine/discussions)
 - **Found a bug?** Open an [Issue](https://github.com/NamanSingh24/order-execution-engine/issues)
-- **Want to chat?** [Join our community] (Coming soon)
 
 ---
 
@@ -697,4 +696,4 @@ Your contributions make this project better for everyone. We appreciate your tim
 
 ---
 
-**Maintained with ❤️ by the Order Execution Engine team**
+**Maintained with ❤️ by [Naman Singh](https://github.com/NamanSingh24)**
