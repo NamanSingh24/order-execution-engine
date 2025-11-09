@@ -5,11 +5,8 @@ A high-performance, real-time order execution engine built with TypeScript that 
 ![Node.js](https://img.shields.io/badge/Node.js-20.x-green)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.6-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![CI](https://github.com/Nam## 🎥 Demo Video
+![CI]
 
-📹 **Watch the Demo:** https://youtube.com/@namansingh24
-
-Video Contents:gh24/order-execution-engine/workflows/CI/badge.svg)
 
 ## 📋 Overview
 
@@ -23,14 +20,14 @@ For questions or support, please open an issue on [GitHub Issues](https://github
 
 ---
 
-**Built with ❤️ by [Naman Singh](https://github.com/NamanSingh24)** questions or support, please:
+**Built by [Naman Singh](https://github.com/NamanSingh24)** questions or support, please:
 - Open an issue on [GitHub Issues](https://github.com/NamanSingh24/order-execution-engine/issues)
 - Contact: namansingh.dev@gmail.com
 - Twitter: [@NamanSingh24](https://twitter.com/NamanSingh24)
 
 ---
 
-**Built with ❤️ by Naman Singh**stem that:
+**Built by Naman Singh**stem that:
 - Routes orders through multiple DEX protocols (Raydium and Meteora)
 - Provides real-time order status updates via WebSocket connections
 - Uses a distributed job queue (BullMQ) for reliable order processing
@@ -773,4 +770,4 @@ For questions or support, please:
 
 ---
 
-**Built with ❤️ by Naman Singh**
+**Built by Naman Singh**
