@@ -18,13 +18,13 @@ let prismaClient: PrismaClient | null = null;
 const prismaOptions = {
   log: isDevelopment
     ? [
-        { emit: 'event', level: 'query' },
-        { emit: 'event', level: 'error' },
-        { emit: 'event', level: 'info' },
-        { emit: 'event', level: 'warn' },
+        { emit: 'event' as const, level: 'query' as const },
+        { emit: 'event' as const, level: 'error' as const },
+        { emit: 'event' as const, level: 'info' as const },
+        { emit: 'event' as const, level: 'warn' as const },
       ]
-    : [{ emit: 'event', level: 'error' }],
-} as const;
+    : [{ emit: 'event' as const, level: 'error' as const }],
+};
 
 /**
  * Get or create PrismaClient singleton instance

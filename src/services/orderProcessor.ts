@@ -2,7 +2,7 @@ import { Worker, Job } from 'bullmq';
 import { getRedisConfig } from '../config/redis';
 import { getPrismaClient } from '../config/database';
 import dexRouter from './dexRouter';
-import { OrderStatus, CreateOrderDTO } from '../types/order.types';
+import { OrderStatus, OrderType, Order, CreateOrderDTO } from '../types/order.types';
 import { logger } from '../utils/logger';
 
 /**
@@ -101,13 +101,28 @@ export class OrderProcessor {
       logger.debug({ orderId }, 'OrderProcessor: Fetching DEX quotes');
       
       // First, retrieve the full order from database
-      const order = await this.prisma.order.findUnique({
+      const dbOrder = await this.prisma.order.findUnique({
         where: { id: orderId },
       });
 
-      if (!order) {
+      if (!dbOrder) {
         throw new Error(`Order ${orderId} not found in database`);
       }
+
+      // Convert database order to Order type
+      const order: Order = {
+        id: dbOrder.id,
+        tokenIn: dbOrder.tokenIn,
+        tokenOut: dbOrder.tokenOut,
+        amount: dbOrder.amount,
+        orderType: dbOrder.orderType as OrderType,
+        status: dbOrder.status as OrderStatus,
+        executedPrice: dbOrder.executedPrice ?? undefined,
+        txHash: dbOrder.txHash ?? undefined,
+        dex: dbOrder.dex ?? undefined,
+        createdAt: dbOrder.createdAt,
+        updatedAt: dbOrder.updatedAt,
+      };
 
       // Step 3: Update status to BUILDING
       await this.updateOrderStatus(orderId, OrderStatus.BUILDING);

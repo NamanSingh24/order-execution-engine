@@ -40,7 +40,7 @@ const buildServer = async () => {
     logger.info('Server: WebSocket plugin registered');
 
     // Add request logging middleware
-    fastify.addHook('onRequest', async (request, _reply) => {
+    fastify.addHook('onRequest', async (request) => {
       logger.info(
         {
           method: request.method,

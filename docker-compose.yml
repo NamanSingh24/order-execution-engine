@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   redis:
     image: redis:7-alpine
@@ -21,14 +19,14 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: orderengine
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: orders_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U orderengine -d orders_db"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d orders_db"]
       interval: 10s
       timeout: 3s
       retries: 3
